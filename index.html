@@ -152,7 +152,7 @@
       background-color: #23603e;
       z-index: 9999;
       border: 0;
-      padding:0;
+      padding: 0;
       font-size: 12px !important;
       line-height: 1.42857143 !important;
       letter-spacing: 2px;
@@ -496,44 +496,52 @@
   </div>
   <div>
 
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+      onload="if(submitted) {window.location='thankyou.html';}"></iframe>
 
-  <!-- Container (Contact Section) -->
-  <!-- <div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-      <div class="col-sm-5">
-        <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Melkbosstrand, Western Cape</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +2781 374 9328</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> iocleaningsa@gmail.com</p>
-      </div>
-      <div class="col-sm-7 slideanim">
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSejgEiCo1rXmCYR8xFx8kiRsazddkZeXwYsIECoGR8WIx9qeg/formResponse"
+        method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <h2 class="text-center">CONTACT</h2>
         <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Melkbosstrand, Western Cape</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +2781 374 9328</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> enquiries@inandoutcleaning.co.za</p>
           </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <div class="col-sm-7 slideanim">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="entry.2005620554" placeholder="Name*" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="entry.1045781291" placeholder="Email address*" type="email"
+                  required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="entry.839337160" placeholder="Message*"
+              rows="5"></textarea><br>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit">Send</button>
+              </div>
+            </div>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
-  </div> -->
 
 
-  <script type="text/javascript">
-    var submitted = false;
-  </script>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-    onload="if(submitted) {window.location='thankyou.html';}"></iframe>
 
-  <div  class="container-fluid bg-grey">
+
+    <!-- <div  class="container-fluid bg-grey">
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSejgEiCo1rXmCYR8xFx8kiRsazddkZeXwYsIECoGR8WIx9qeg/formResponse"
       method="post" target="hidden_iframe" onsubmit="submitted=true;">
     <h2 class="text-center">CONTACT</h2>
@@ -546,34 +554,34 @@
       </div>
       <div class="col-sm-7 slideanim">
         <div class="row">
-          <div class="col-sm-6 ">
+          <div class="col-sm-6 "> -->
             <!-- <input class="form-control" id="name" name="name" placeholder="Name" type="text" required> -->
-            <input type="text" placeholder="Name*" name="entry.2005620554" required>
+    <!-- <input type="text" placeholder="Name*" name="entry.2005620554" required>
 
-          </div>
-          <div class="col-sm-6 ">
-            <!-- <input class="form-control" id="email" name="email" placeholder="Email" type="email" required> -->
-            <input type="email" placeholder="Email address*" name="entry.1045781291" required>
-          </div>
-        </div>
-        <!-- <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br> -->
-        <textarea rows="5" placeholder="Message*" name="entry.839337160" required></textarea>
-        <div class="row">
-          <div class="col-sm-12 ">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    </form>
   </div>
+  <div class="col-sm-6 "> -->
+    <!-- <input class="form-control" id="email" name="email" placeholder="Email" type="email" required> -->
+    <!-- <input type="email" placeholder="Email address*" name="entry.1045781291" required>
+  </div>
+  </div> -->
+  <!-- <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br> -->
+  <!-- <textarea rows="5" placeholder="Message*" name="entry.839337160" required></textarea>
+  <div class="row">
+    <div class="col-sm-12 ">
+      <button class="btn btn-default pull-right" type="submit">Send</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  </form>
+  </div>  -->
 
 
 
 
-  
 
- 
+
+
 
 
   <!-- <div class="row">
@@ -602,7 +610,7 @@
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>Powered By <a href="https://www.w3schools.com" title="Visit w3schools">In&Out Cleaning Services</a></p>
+    <p>Powered By <a href="https://www.inandoutcleaning.co.za" title="Visit In&Out Cleaning Services">In&Out Cleaning Services</a></p>
   </footer>
 
   <script>
